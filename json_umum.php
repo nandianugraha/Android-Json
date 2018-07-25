@@ -9,6 +9,8 @@ $num_results = $result->num_rows;
 //cek jika data tidak 0
 if( $num_results > 0){ 
 $array = array();
+$status = "status";
+$message = "message";
 while( $row = $result->fetch_assoc() ){
 //untuk mengektrak data
 extract($row);
